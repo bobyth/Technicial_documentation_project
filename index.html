@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Technicial Documentation</title>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <main id="main-doc">
+        <!-- Sidebar  -->
+        <nav id="navbar">
+            <div class="navbar-header">
+
+                <header>
+                    <h3>HTML Documentation</h3>
+                </header>
+            </div>
+
+            <ul class="list-unstyled components">
+
+
+                <li>
+                    <a class="nav-link" href="#What_is_HTML?" >What is HTML?</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Headings">HTML Headings</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Styles">HTML Styles</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Text_Formatting">HTML Text Formatting</a>
+                </li>
+                <li>
+                    <a class="nav-link"  href="#HTML_Comments">HTML Comments</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Colors">HTML Colors</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Links">HTML Links</a>
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+
+
+        <div id="content">
+
+
+
+            <section id="What_is_HTML?" class="main-section"><header>
+                <h2>What is HTML?</h2>
+            </header>
+                <p>HTML is the standard markup language for creating Web pages.</p>
+
+                <ul>
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML describes the structure of Web pages using markup</li>
+                    <li>HTML elements are the building blocks of HTML pages</li>
+                    <li>HTML elements are represented by tags</li>
+                    <li>HTML tags label pieces of content such as &quot;heading&quot;, &quot;paragraph&quot;, &quot;table&quot;, and so on</li>
+                    <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+                </ul>
+            </section>
+
+
+            <div class="line"></div>
+
+            <section id="HTML_Elements" class="main-section">
+                <header>
+                    <h2>HTML Elements</h2>
+                </header>
+                <p>An HTML element usually consists of a <strong>start</strong> tag and <strong>end</strong> tag,
+                    with the content inserted in between:</p>
+                <div class="htmlHigh" style="font-size:20px;padding:10px;margin-bottom:10px;">
+                    &lt;tagname&gt;Content goes here...&lt;/tagname&gt;
+                </div>
+                <h3>Example</h3>
+                <div class="w3-code">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>&lt;body&gt;<br><br>
+                    &lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+                    &lt;/body&gt;<br>&lt;/html&gt;
+                </div>
+                <div class="line"></div>
+
+                <h3>Example Explained</h3>
+                <p>The <code class="w3-codespan">&lt;html&gt;</code> element defines the <strong>whole document</strong>.</p>
+                <p>It has a <strong>start</strong> tag &lt;html&gt; and an <strong>end</strong> tag &lt;/html&gt;.</p>
+                <p>The element <strong>content</strong> is another HTML element (the <code class="w3-codespan">&lt;body&gt;</code> element).</p>
+
+                <p>The <code class="w3-codespan">&lt;body&gt;</code> element defines the <strong>document body</strong>.</p>
+                <p>It has a <strong>start</strong> tag &lt;body&gt; and an <strong>end</strong> tag &lt;/body&gt;.</p>
+                <p>The element <strong>content</strong> is two other HTML elements (<code class="w3-codespan">&lt;h1&gt;</code> and <code class="w3-codespan">
+                    &lt;p&gt;</code>).</p>
+                <p>The <code class="w3-codespan">&lt;h1&gt;</code> element defines a <strong>heading</strong>.</p>
+                <p>It has a <strong>start</strong> tag &lt;h1&gt; and an
+                    <strong>end</strong> tag &lt;/h1&gt;.</p>
+                <p>The element <strong>content</strong> is: My First Heading.</p>
+                <p>The <code class="w3-codespan">&lt;p&gt;</code> element defines a <strong>paragraph</strong>.</p>
+                <p>It has a <strong>start</strong> tag &lt;p&gt; and an
+                    <strong>end</strong> tag &lt;/p&gt;.</p>
+                <p>The element <strong>content</strong> is: My first paragraph.</p>
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Attributes" class="main-section">
+                <header>
+                    <h2>HTML Attributes</h2>
+                </header>
+                <ul>
+                    <li>All HTML elements can have <b>attributes</b></li>
+                    <li>Attributes provide <b>additional information</b> about an element</li>
+                    <li>Attributes are always specified in <b>the start tag</b></li>
+                    <li>Attributes usually come in name/value pairs like: <b>name=&quot;value&quot;</b></li>
+                </ul>
+
+                <hr>
+                <h2>The href Attribute</h2>
+                <p>HTML links are defined with the <code class="w3-codespan">&lt;a&gt;</code> tag. The link address is specified in the <code class="w3-codespan">href</code> attribute:</p>
+                
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;a href=&quot;https://www.freecodecamp.org&quot;&gt;This is a link&lt;/a&gt;
+                    </div>
+                    <p>You will learn more about links and the <code class="w3-codespan">&lt;a&gt;</code> tag later in this tutorial.</p>
+
+                    <hr>
+                    <h2>The src Attribute</h2>
+                    <p>HTML images are defined with the <code class="w3-codespan">&lt;img&gt;</code> tag.</p>
+                    <p>The filename of the image source is specified in the <code class="w3-codespan">src</code> attribute:</p>
+
+                    <hr>
+
+                    <h2>The style Attribute</h2>
+                    <p>The <code class="w3-codespan">style</code> attribute is used to specify the styling of an element, like color,
+                        font, size etc.</p>
+                    
+                        <h3>Example</h3>
+                        <div class="w3-code notranslate htmlHigh">
+                            &lt;p style=&quot;color:red&quot;&gt;I am a paragraph&lt;/p&gt;
+                        </div>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Headings" class="main-section">
+                <header>
+                    <h2>HTML Headings</h2>
+                </header>
+                <p>Headings are defined with the <code class="w3-codespan">&lt;h1&gt;</code> to <code class="w3-codespan">&lt;h6&gt;</code> tags.</p>
+                <p><code class="w3-codespan">&lt;h1&gt;</code> defines the most important heading. <code class="w3-codespan">&lt;h6&gt;</code> defines the least important heading.</p>
+                <hr>
+                <div class="w3-white w3-padding notranslate">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
+                <hr>
+
+
+
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                    &lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                    &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                    &lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</div>
+                <hr>
+                <h2>Headings Are Important</h2>
+                <p>Search engines use the headings to index the structure and content of your web pages.</p>
+                <p>Users skim your pages by its headings. It is important to use headings to show the document structure.</p>
+                <p><code class="w3-codespan">&lt;h1&gt;</code> headings should be used for main headings, followed by <code class="w3-codespan">&lt;h2&gt;</code> headings, then the less important
+                    <code class="w3-codespan">&lt;h3&gt;</code>, and so on.</p>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Paragraphs" class="main-section">
+                <header>
+                    <h2>HTML Paragraphs</h2>
+                </header>
+                <p>The HTML <code class="w3-codespan">&lt;p&gt;</code> element defines a <strong>paragraph</strong>:</p>
+                
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                        &lt;p&gt;This is another paragraph.&lt;/p&gt;
+                    </div>
+                    <hr>
+                    <h2>HTML Line Breaks</h2>
+                    <p>The HTML <code class="w3-codespan">&lt;br&gt;</code> element defines a <strong>line break</strong>.</p>
+                    <p>Use <code class="w3-codespan">&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+                    
+                        <h3>Example</h3>
+                        <div class="w3-code notranslate htmlHigh">
+                            &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</div>
+                        <a target="_blank" href="tryit.asp?filename=tryhtml_paragraphs" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+                    
+                    <p>The <code class="w3-codespan">&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Styles" class="main-section">
+                <header>
+                    <h1>HTML Styles</h1>
+                </header>
+                <h3>Example</h3>
+                <div class="w3-container w3-white">
+                    <p style="font-size:20px;color:red;">I am Red</p>
+                    <p style="font-size:20px;color:blue;">I am Blue</p>
+                    <p style="font-size:36px;margin:12px 0">I am Big</p>
+                </div>
+
+                    <hr>
+
+                    <h2>The HTML Style Attribute</h2>
+                    <p>Setting the style of an HTML element, can be done with the <code class="w3-codespan">style</code> attribute.</p>
+                    <p>The HTML <code class="w3-codespan">style</code> attribute has the following <strong>syntax</strong>:</p>
+
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;tagname
+                        style=&quot;<em>property</em>:<em>value;</em>&quot;&gt;
+                    </div>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Text_Formatting"class="main-section">
+                <header>
+                    <h1>HTML Text Formatting</h1>
+                </header>
+                <hr>
+                <h3>Text Formatting</h3>
+
+                <p><b>This text is bold</b></p>
+                <p><i>This text is italic</i></p>
+                <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+                <hr>
+                <p>In the previous chapter, you learned about the HTML <strong>style attribute</strong>.</p>
+                <p>HTML also defines special <strong>elements</strong> for defining
+                    text with a special <strong>meaning</strong>.</p>
+
+                <p>HTML uses elements like <code class="w3-codespan">&lt;b&gt;</code> and <code class="w3-codespan">&lt;i&gt;</code> for formatting output,
+                    like <b>bold</b> or <i>italic</i> text.</p>
+
+                <p>Formatting elements were designed to display special types of text:</p>
+                <ul>
+                    <li><code class="w3-codespan">&lt;b&gt;</code> - Bold text</li>
+                    <li><code class="w3-codespan">&lt;strong&gt;</code> - Important text</li>
+                    <li><code class="w3-codespan">&lt;i&gt;</code> - Italic text</li>
+                    <li><code class="w3-codespan">&lt;em&gt;</code> - Emphasized text</li>
+                    <li><code class="w3-codespan">&lt;mark&gt;</code> - Marked text</li>
+                    <li><code class="w3-codespan">&lt;small&gt;</code> - Small text</li>
+                    <li><code class="w3-codespan">&lt;del&gt;</code> - Deleted text</li>
+                    <li><code class="w3-codespan">&lt;ins&gt;</code> - Inserted text</li>
+                    <li><code class="w3-codespan">&lt;sub&gt;</code> - Subscript text</li>
+                    <li><code class="w3-codespan">&lt;sup&gt;</code> - Superscript text</li>
+                </ul>
+                <hr>
+                <h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
+                <p>The HTML <code class="w3-codespan">&lt;b&gt;</code> element defines <strong>bold</strong> text,
+                    without any extra importance.</p>
+                <hr>
+                
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;b&gt;This text is bold&lt;/b&gt;</div>
+                    <hr>
+                    <p>The HTML <code class="w3-codespan">&lt;strong&gt;</code> element defines <strong>strong</strong>
+                        text, with added semantic &quot;strong&quot; importance.</p>
+                    
+                        <h3>Example</h3>
+                        <div class="w3-code notranslate htmlHigh">
+                            &lt;strong&gt;This text is strong&lt;/strong&gt;</div>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Comments" class="main-section">
+                <header>
+                    <h2>HTML Comments</h2>
+                </header>
+                <p>You can add comments to your HTML source by using the following syntax:</p>
+                <div class="w3-example">
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;!-- Write your comments here --&gt;
+                    </div></div>
+                <br>
+                <p>Notice that there is an exclamation point (!) in the opening tag, but not in the closing tag.</p>
+                <div class="w3-panel w3-note">
+                    <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+                </div>
+
+                <p>With comments you can place notifications and reminders in your HTML:</p>
+                
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;!-- This is a comment --&gt;<br><br>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                        <br>&lt;!-- Remember to add more information here --&gt;</div>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Colors" class="main-section">
+
+                <header>
+                    <h2>HTML Colors</h2>
+                </header>
+                <p>You can set the background color for HTML elements:</p>
+
+                <div style="background-color:dodgerblue; text-align:center;color:white;font-size:24px;">Hello World</div>
+                <br>
+                <div class="w3-container" style="background-color:tomato;color:white;"><br>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br><br>
+                </div>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;h1 style=&quot;background-color:DodgerBlue;&quot;&gt;Hello World&lt;/h1&gt;<br>&lt;p style=&quot;background-color:Tomato;&quot;&gt;Lorem
+                        ipsum...&lt;/p&gt;</div>
+                </div>
+                <br>
+                <hr>
+                <h2>Text Color</h2>
+                <p>You can set the color of text:</p>
+                <h3 style="color:tomato">Hello World</h3>
+                <p style="color:dodgerblue">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <p style="color:mediumseagreen">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+                
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;h1 style=&quot;color:Tomato;&quot;&gt;Hello
+                        World&lt;/h1&gt;<br>&lt;p style=&quot;color:DodgerBlue;&quot;&gt;Lorem
+                        ipsum...&lt;/p&gt;<br>&lt;p style=&quot;color:MediumSeaGreen;&quot;&gt;Ut wisi
+                        enim...&lt;/p&gt;</div>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section id="HTML_Links" class="main-section">
+
+                <header>
+                    <h2>HTML Links</h2>
+                </header>
+                <p>HTML links are hyperlinks.</p>
+                <p>You can click on a link and jump to another document.</p>
+                <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+                <div class="w3-panel w3-note">
+                    <p><strong>Note:</strong> A link does not have to be text. It can be an image or any other HTML element.</p>
+                </div>
+                <hr>
+
+                <h2>HTML Links - Syntax</h2>
+                <p>In HTML, links are defined with the <code class="w3-codespan">&lt;a&gt;</code> tag:</p>
+                <div class="w3-example">
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;a href=&quot;<i>url</i>&quot;&gt;<i>link text</i>&lt;/a&gt;
+                    </div>
+                </div>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;a href=&quot;https://www.w3schools.com/html/&quot;&gt;Visit our HTML tutorial&lt;/a&gt;
+                    </div>
+                    <hr>
+
+                    <p>The <code class="w3-codespan">href</code> attribute specifies the destination address (<span class="w3-text-indigo">https://www.w3schools.com/html/</span>)
+                        of the link.</p>
+                    <p>The <strong>link text</strong> is the visible part (Visit our HTML tutorial).</p>
+                    <p>Clicking on the link text will send you to the specified address.</p>
+
+                    <div class="w3-panel w3-note">
+                        <p><strong>Note:</strong> Without a forward slash at the end of subfolder addresses, you might generate two requests to the server.
+                            Many servers will automatically add a forward slash to the end of the address, and then create a new request.</p>
+                    </div>
+
+
+
+            </section>
+
+        </div>
+</div>
+</main>
+
+</body>
+
+</html>
